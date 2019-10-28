@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Mono&display=swap');
+
+/* Variaveis */
+
+:root {
+    --font-principal: 'Oswald', sans-serif;
+    --font-secundaria: 'Roboto Mono', monospace;
+    --cor-principal: #111316;
+    --cor-secundaria: #f1f1f1;
+}
+
+/* Reset */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/* top */
+
+.container .top {
+    width: 100%;
+    height: 50%;
+    background: url('assets/top.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .top-content {
+    width: 50%;
+    text-align: center;
+    background: var(--cor-principal);
+}
+
+.top h2 {
+    margin: 0;
+    padding: 0;
+    color: var(--cor-secundaria);
+    font-family: var(--font-principal);
+    font-size: 50px;
+    opacity: 0.7;
+}
+
+/* Center */
+
+.container .center {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--cor-principal);
+}
+
+.center .est-1 {
+    width: 20%;
+    height: 40px;
+    background: var(--cor-secundaria);
+    margin: 0 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    -webkit-animation-name: example1;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.center .est-2 {
+    width: 20%;
+    height: 40px;
+    background: var(--cor-secundaria);
+    margin: 0 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    -webkit-animation-name: example2;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.center .est-3 {
+    width: 20%;
+    height: 40px;
+    background: var(--cor-secundaria);
+    margin: 0 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    -webkit-animation-name: example3;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: example3;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/*@-webkit-keyframes example1 {
+    from {width: 20%}
+    to {width: 60%}
+}
+
+@keyframes example1 {
+    from {width: 20%}
+    to {width: 60%}
+}
+
+@-webkit-keyframes example2 {
+    from {width: 20%}
+    to {width: 80%}
+}
+
+@keyframes example2 {
+    from {width: 20%}
+    to {width: 80%}
+}
+
+@-webkit-keyframes example3 {
+    from {width: 20%}
+    to {width: 40%}
+}
+
+@keyframes example3 {
+    from {width: 20%}
+    to {width: 40%}
+}*/
+
+.center > h2 {
+    font-family: var(--font-principal);
+    color: var(--cor-secundaria);
+    padding: 0 30px;
+}
+
+.center > div p{
+    font-family: var(--font-secundaria);
+    color: var(--cor-principal);
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+/* Bottom */
+
+.bottom {
+    width: 100%;
+    height: 300px;
+    background: var(--cor-secundaria);
+    color: var(--cor-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

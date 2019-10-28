@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--index style-->
+
+    <link rel="stylesheet" href="index.css">
+
+
+    <title>Estatística</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="top-content">
+                <h2>Estatísticas</h2>
+            </div>
+        </div>
+        <div class="center">
+            <h2>Trabalho bem feito</h2>
+            <div class="est-1">
+                <p>80%</p>
+            </div>
+            <h2>Cumpriu os prazos</h2>
+            <div class="est-2">
+                <p>50%</p>
+            </div>
+            <h2>Atrasos</h2>
+            <div class="est-3">
+                <p>90%</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <h2>Final das Estatísticas</h2>
+        </div>
+    </div>
+
+    <script>
+        let cssAnimation1 = document.createElement('style');
+        cssAnimation1.type = 'text/css';
+        let rules1 = document.createTextNode('@-webkit-keyframes example1 {' +
+            'from {width: 20%}' + 'to {width: 80%}'
+        );
+
+        let cssAnimation2 = document.createElement('style');
+        cssAnimation2.type = 'text/css';
+        let rules2 = document.createTextNode('@-webkit-keyframes example2 {' +
+            'from {width: 20%}' + 'to {width: 50%}'
+        );
+        
+        let cssAnimation3 = document.createElement('style');
+        cssAnimation3.type = 'text/css';
+        let rules3 = document.createTextNode('@-webkit-keyframes example3 {' +
+            'from {width: 20%}' + 'to {width: 90%}'
+        );
+        cssAnimation1.appendChild(rules1);
+        cssAnimation2.appendChild(rules2);
+        cssAnimation3.appendChild(rules3);
+        document.getElementsByTagName("head")[0].appendChild(cssAnimation1);
+        document.getElementsByTagName("head")[0].appendChild(cssAnimation2);
+        document.getElementsByTagName("head")[0].appendChild(cssAnimation3);
+    </script>
+</body>
+</html>

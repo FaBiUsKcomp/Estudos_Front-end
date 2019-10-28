@@ -1,0 +1,138 @@
+/* Data: 23/09/2019 
+   By - FaBiUsKcomp
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Mansalva|Montserrat&display=swap');
+
+/* Variaveis Usadas */
+
+:root{
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Mansalva', cursive;
+    --primary-color: #2d3436;
+    --secondary-color: #f1f1f1;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Parallax 1*/
+
+.container .parallax-1{
+    width: 100%;
+    height: 500px;
+    background: url('assets/Parallax1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container span {
+    font-family: var(--font-primary);
+    width: 160px;
+    height: 60px;
+    background: var(--primary-color);
+    opacity: 0.8;
+    
+}
+
+.container span p {
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 3px 0;
+}
+
+.container .content-1 {
+    width: 100%;
+    height: 265px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-1 .content-title-1 {
+    padding: 0 30px;
+    font-family: var(--font-secondary);
+    font-size: 30px;
+}
+
+.content-1 p {
+    font-family: var(--font-primary);
+    text-align: justify;
+    padding: 0 30px;
+}
+
+/* Parallax 2 */
+
+.container .parallax-2 {
+    width: 100%;
+    height: 400px;
+    background: url('assets/Parallax2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content-2 {
+    width: 100%;
+    height: 300px;
+    background: var(--primary-color);
+    font-family: var(--font-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-2 .content-title-2 {
+    padding: 40px 20px;
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+/* Parallax 3 */
+
+.container .parallax-3 {
+    width: 100%;
+    height: 400px;
+    background: url('assets/Parallax3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content-3 {
+    width: 100%;
+    height: 250px;
+    background: var(--primary-color);
+    font-family: var(--font-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-3 .content-title-3 {
+    padding: 40px 20px;
+    margin: 0;
+    color: var(--secondary-color);
+}

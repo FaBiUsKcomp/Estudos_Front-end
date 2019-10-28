@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Alert Personalizado</title>
+</head>
+<body>
+    <a id="show" class="btn">Pressione</a>
+    <div id="box">
+        <span class="ion-checkmark-round"><img src="check.png" style="width: 100px"></span>
+        <h1>Bom Trabalho!</h1>
+        <!--<a id="close" class="close">Fechar</a>-->
+    </div>
+
+    <script type="text/javascript">
+
+        var $show = document.getElementById("show");
+
+        var $box = document.getElementById("box");
+
+        $show.addEventListener('click', time);
+
+        function time(){
+            setTimeout(function(){
+                $box.style.display = "block";
+                stop()
+            }, 150);  
+        }
+        function stop(){
+            setTimeout(function(){
+                $box.style.display = "none";
+                link();
+            }, 2000);
+        }
+
+        function link(){
+            window.open('temp.html');
+        }
+
+        /*var $close  = document.getElementById("close");
+
+        $show.addEventListener("click", time);
+
+        $close.addEventListener("click", pop);
+
+        var c = 0;
+
+        function pop(){
+            if(c == 0){
+                document.getElementById("box").style.display = "block";
+                c = 1;
+            } else {
+                document.getElementById("box").style.display = "none";
+                c = 0;
+            }
+        }*/
+
+    </script>
+</body>
+</html>
