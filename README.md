@@ -5,3 +5,5 @@ Este é um repositório de estudos sobre Front-End e suas tecnologias.
  - CSS
  - JavaScript
  - jQuery entre outros
+
+ 29/10/2019
